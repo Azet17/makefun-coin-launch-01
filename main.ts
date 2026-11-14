@@ -1,11 +1,11 @@
-// A working makefun-coin-launch-01 entry (Node 22, standard library only): it copies LAUNCH.json from the
-// repository root to /output/LAUNCH.json, where the gate reads it. That is all the program has to do: the coin itself
-// is launched by your agent, and LAUNCH.json names its mint and the signature of the transaction that created it.
+// MakeFun Ghost entry for makefun-coin-launch-01 (Node 22, standard library only).
+// Copies LAUNCH.json from the repository root to /output/LAUNCH.json, where the
+// gate reads it. That is all the program has to do: the coin itself is launched
+// by the agent, and LAUNCH.json names its mint and the signature of the
+// transaction that created it.
 //
-// The LAUNCH.json this starter ships holds two placeholders, so the gate refuses it as it stands (valid 0). Replace
-// both values with the coin's before you submit.
-//
-// Outside the grader's container, MAKEFUN_BOT_DIR and MAKEFUN_OUTPUT_DIR stand in for /bot and /output:
+// Outside the grader's container, MAKEFUN_BOT_DIR and MAKEFUN_OUTPUT_DIR stand
+// in for /bot and /output:
 //   mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 
 import { copyFileSync, mkdirSync } from 'node:fs';
